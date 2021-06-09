@@ -27,9 +27,14 @@
                 <div>
 
                     <img src="../img/D-vhXbqXkAA9BGd.png" height="112" alt="logo-veranum">
-                    <h2>Iniciar Sesion</h2>
+                    <h2>Registrarse</h2>
                 </div>
                 <div class="ingreso-datos">
+
+                    <div class="form-group">
+                        <label for="correo">Nombre</label>
+                        <input type="text" class="form-control" name="correo" id="correo">
+                    </div>
 
                     <div class="form-group">
                         <label for="correo">Correo</label>
@@ -41,11 +46,21 @@
                         <input type="password" class="form-control" name="contrasena" id="contrasena">
                     </div>
 
+                    <div class="form-group">
+                        <label for="contrasena">Repetir contraseña</label>
+                        <input type="password" class="form-control" name="contrasena" id="contrasena">
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Acepto los terminos y condiciones</label>
+                    </div>
+
                 </div>
                 <div class="botones">
 
-                    <button type="submit" class="btn btn-primary" id="login" name="login">Ingresar</button>
-                    <a href="" id="olvido-pass">¿Olvidaste tu contraseña?</a>
+                    <button type="submit" class="btn btn-primary" id="login" name="login">Registrarse</button>
+                    <a href="" id="olvido-pass">Volver al inicio</a>
                 </div>
             </form>
         </div>
