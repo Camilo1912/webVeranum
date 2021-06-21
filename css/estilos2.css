@@ -1,0 +1,141 @@
+
+:root {
+    --clr-text: #333333;
+    --clr-primario: #2477aa;
+    --clr-secundario: #826653;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white;
+    height: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor__imagen {
+    padding: 40px;
+}
+
+.navegador__principal {
+    width: 100%;
+    padding: 90px 0 50px 0 ;
+}
+
+.menu_listado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contenedor_loginsingin {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 40px;
+}
+
+.item_nav {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+.item_nav:hover {
+    color: var(--clr-primario);
+}
+
+.boton {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.primario {
+    background-color: var(--clr-secundario);
+    color: white;
+}
+
+.primario:hover {
+    background-color: #6e5646;
+    box-shadow: 0 2px 5px #826653c2;
+}
+
+.secundario:hover {
+    background-color: whitesmoke;
+}
+
+.imagen-portada {
+    background-image: url(../img/hotel_header.jpg);
+    background-color: var(--clr-primario);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    padding-top: 400px;
+    padding-left: 50px;
+}
+
+.informacion-servicios {
+    background-color: var(--clr-primario);
+    height: 200px;
+    color: white;
+    padding: 50px 150px;
+}
+
+.informacion__veranumgeneral {
+    margin-top: 30px;
+}
+
+.infomador__servicios {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informador {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+    color: var(--clr-secundario);
+    background-color: white;
+    padding: 50px;
+    border-radius: 7px;
+    height: 300px;
+    width: 40%;
+}
+
+.informador:hover {
+    transition: 50ms;
+    transform:scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--clr-secundario);
+}
+
+
+
+
+
+
+footer {
+    /* border-top: 10px solid var(--clr-secundario); */
+    background-color: whitesmoke;
+    height: 200px;
+    width: 100%;
+}
