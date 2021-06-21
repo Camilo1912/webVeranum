@@ -24,11 +24,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 50px;
 }
 
-.contenedor__imagen {
-    padding: 40px;
-}
+
 
 .navegador__principal {
     width: 100%;
@@ -84,12 +83,10 @@ header {
 .imagen-portada {
     background-image: url(../img/hotel_header.jpg);
     background-color: var(--clr-primario);
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 500px;
     color: white;
-    padding-top: 400px;
-    padding-left: 50px;
 }
 
 .informacion-servicios {
@@ -97,6 +94,14 @@ header {
     height: 200px;
     color: white;
     padding: 50px 150px;
+}
+
+.informacion-servicios h2 {
+    font-size: 35px;
+}
+
+.informacion-servicios p {
+    font-size: 18px;
 }
 
 .informacion__veranumgeneral {
@@ -112,22 +117,48 @@ header {
 }
 
 .informador {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
-    color: var(--clr-secundario);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     background-color: white;
-    padding: 50px;
     border-radius: 7px;
     height: 300px;
     width: 40%;
+    color: var(--clr-secundario);
+    text-align: center;
 }
 
 .informador:hover {
     transition: 50ms;
-    transform:scale(1.03);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    transform:scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     border: 2px solid var(--clr-secundario);
+    background-color: var(--clr-secundario);
+    background-blend-mode: multiply;
 }
 
+.info__habitaciones {
+    background-color: var(--clr-secundario);
+    background-image: url(../img/habitacion_1.jpeg);
+    background-position: center;
+}
+
+.info__servicioaparte {
+    background-color: var(--clr-secundario);
+    background-image: url(../img/para_editar/1686803.jpg);
+    background-position: center;
+
+    
+}
+
+.informador h3 {
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    width: 200px;
+}
 
 
 
