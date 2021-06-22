@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/flexboxgrid.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <title>Contacto</title>
+</head>
+<body class="body__contacto">
+    <header class="contenedor_">
+        <div class="contenedor__imagen">
+            <a href="../index.html">
+                <img src="../img/D-vhXbqXkAA9BGd.png" height="113" alt="logo-veranum">
+            </a>
+        </div>
+        <nav class="navegador__principal">
+            <ul class="menu_listado">
+                <li></li>
+                <li><a href="../index.html" class="item_nav">Inicio</a></li>
+                <li><a href="./habitaciones.html" class="item_nav">Habitaciones</a></li>
+                <li><a href="#" class="item_nav">Servicios</a></li>
+                <li><a href="#" class="item_nav">Nosotros</a></li>
+                <li><a href="#" class="item_nav">Contacto</a></li>
+                <li></li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+        <div class="contenedor_loginsingin">
+            <a href="./inicio-sesion.html" class="boton primario">Log In</a>
+            <a href="./registrarse.html" class="boton secundario">Registrarse</a>
+        </div>
+    </header>
+    <div class="column contenedor__fex__forma">
+
+        <div class="container__form">
+            <form action="post" class="forma__contacto">
+                <label for="titulo" id="titulo-contactanos">Contactanos</label>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"  class="campo_contacto">
+                <label for="correo_electronico">Correo</label>
+                <input type="email" name="email" id="email"  class="campo_contacto">
+                <textarea name="mensaje" id="texto_mensaje" cols="100" rows="10"></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -16,7 +16,9 @@
 header {
     background-color: white;
     height: 150px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px); */
 }
 
 .contenedor_ {
@@ -27,11 +29,9 @@ header {
     padding-left: 50px;
 }
 
-
-
 .navegador__principal {
     width: 100%;
-    padding: 90px 0 50px 0 ;
+    padding: 90px 50px 50px 50px ;
 }
 
 .menu_listado {
@@ -48,6 +48,12 @@ header {
     padding: 40px;
 }
 
+.barra {
+    background-color: #cccccc;
+    height: 69%;
+    width: 3px;
+}
+
 .item_nav {
     text-decoration: none;
     color: var(--clr-text);
@@ -61,7 +67,7 @@ header {
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
-    color: #333333;
+    color: #969696;
     text-align: center;
     border-radius: 5px;
 }
@@ -121,11 +127,12 @@ header {
     justify-content: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     background-color: white;
-    border-radius: 7px;
+    border-radius: 10px;
     height: 300px;
     width: 40%;
     color: var(--clr-secundario);
     text-align: center;
+    text-decoration: none;
 }
 
 .informador:hover {
@@ -147,8 +154,19 @@ header {
     background-color: var(--clr-secundario);
     background-image: url(../img/para_editar/1686803.jpg);
     background-position: center;
+}
 
-    
+.info__ofertas {
+    background-color: var(--clr-secundario);
+    background-image: url(../img/para_editar/tenis.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info__restaurant {
+    background-color: var(--clr-secundario);
+    background-image: url(../img/para_editar/restaurant.jpg);
+    background-position: center;
 }
 
 .informador h3 {
@@ -160,13 +178,270 @@ header {
     width: 200px;
 }
 
-
-
-
-
 footer {
     /* border-top: 10px solid var(--clr-secundario); */
     background-color: whitesmoke;
-    height: 200px;
+    height: 250px;
     width: 100%;
+}
+
+
+/* ----------------------------- habitaciones -------------------------------------- */
+
+.contenedor__contenido {
+    display: flex;
+    flex-direction: row;
+}
+
+.nevegador__secundario {
+    background-color: var(--clr-primario);
+    width: 20%;
+    height: auto;
+}
+
+.listado__tiposhabitaciones {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.listado__tiposhabitaciones li {
+    padding: 30px;
+}
+
+.campos__habitaciones {
+    padding: auto;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.contenedor__tarjetas {
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px; */
+}
+
+.tarjeta__habitacion {
+    margin-top: 50px;
+    width: 46%;
+    background-color: whitesmoke;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta__habitacion:hover {
+    transition: 50ms;
+    transform:scale(1.08);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    background-color: var(--clr-secundario);
+}
+
+.contenedor__reservar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.boton__reservar {
+    height: 40px;
+    width: 150px;
+    background-color: var(--clr-primario) ;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.boton__reservar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.tarjeta__contenido {
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.69);
+    float: right;
+    border: 2px solid var(--clr-secundario);
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: left;
+    color: var(--clr-text);
+}
+
+.tarjeta__habitacion div:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.tarjeta__habitacion div h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1490px){
+    .contenedor__tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta__habitacion {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* estas habitaciones serán generadas segun la bd*/
+
+
+.habitacion1 {
+    background-image: url('../img/habitacion_1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion2 {
+    background-image: url('../img/habitaciones/habitacion_2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion3 {
+    background-image: url('../img/habitaciones/habitacion_3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion4 {
+    background-image: url('../img/habitacion_1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion5 {
+    background-image: url('../img/habitaciones/habitacion_2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion6 {
+    background-image: url('../img/habitaciones/habitacion_3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion7 {
+    background-image: url('../img/habitacion_1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion8 {
+    background-image: url('../img/habitaciones/habitacion_2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.habitacion9 {
+    background-image: url('../img/habitaciones/habitacion_3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/* ------------------------ contacto ------------------------------------------------------------------------ */
+
+.body__contacto {
+    background-image: url(../img/hotel_header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contenedor__fex__forma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__form {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 50px;
+    width: 900px;
+    height: 700px;  
+    color: #333333;
+}
+
+.forma__contacto {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.campo_contacto {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e0e2e5;
+    border: 2px solid rgba(165, 129, 105, 0.5);
+}
+
+#texto_mensaje {
+    border-radius: 5px;
+    background-color: #e0e2e5;
+    border: 2px solid rgba(165, 129, 105, 0.5);
+    margin: 40px;
+}
+
+#titulo-contactanos {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn-enviar {
+    width: 300px;
+    height: 50px;
+    background-color: var(--clr-primario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin:0 auto;
+    font-size: 20px;
+}
+
+.btn-enviar:hover {
+    box-shadow: 0 0 15px var(--clr-primario);
 }
